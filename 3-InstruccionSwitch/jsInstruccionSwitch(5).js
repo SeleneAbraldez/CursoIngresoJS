@@ -1,5 +1,5 @@
 function mostrar()
-{
+{ //codigo ams limpio
 	var laHora; 
 	var laHora = document.getElementById('hora').value;
 	laHora = parseInt(laHora);
@@ -16,10 +16,4 @@ function mostrar()
 			alert("No valido/No es de mañana");
 	}
 
-//alert (laHora);
-	
-	
-
-
-
-}//FIN DE LA FUNCIÓN
+}

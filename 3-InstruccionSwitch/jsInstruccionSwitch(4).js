@@ -1,5 +1,5 @@
 function mostrar()
-{
+{ //Ejericio corregido, me faltaba punto y coma, break
 	var mesDelAño;
 	var mesDelAño = document.getElementById('mes').value;
 
@@ -11,7 +11,8 @@ function mostrar()
 		case "Junio":
 		case "Septiembre":
 		case "noviembre":
-			alert("30 dias.")
+			alert("30 dias.");
+			break;
 		default:
 			alert("31 dias.")
 	}

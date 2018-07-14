@@ -14,7 +14,4 @@ function mostrar()
 			alert("Este mes tiene 30 o mas dias.")
 	}
 	
-	
-
-
 }//FIN DE LA FUNCIÓN

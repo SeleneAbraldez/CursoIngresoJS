@@ -21,8 +21,4 @@ function mostrar()
 			alert("Mes no valido");
 	}
 
-
-
-
-
 }//FIN DE LA FUNCIÓN
