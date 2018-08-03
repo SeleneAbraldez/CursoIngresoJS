@@ -5,6 +5,7 @@ si no es un día valido, también informarlo,
 usar una sola ventana alert.*/
 function mostrar()
 {
+	/*
 	var dia;
 
 	dia = prompt("Ingrese un dia (s/mayusculas ni tildes): ");
@@ -26,5 +27,24 @@ function mostrar()
 		default:
 			alert("Ingrese dia valido");
 	}
+	*/
+	var dia; 
+	dia = prompt("Ingrese dia: ");
 
+	switch(dia){
+		case "lunes":
+		case "martes":
+		case "miercoles":
+		case "jueves":
+		case "viernes":
+			alert("A trabajar");
+			break;
+		case "sabado":
+		case "domingo":
+			alert("Buen finde");
+			break;
+		default:
+			alert("Dia no valido.")
+
+	}
 }

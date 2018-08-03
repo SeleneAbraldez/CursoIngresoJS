@@ -5,7 +5,7 @@ de lo contrario los sumo.
 Si la suma es menor a 50 ,además de mostrar el resultado, muestro el mensaje 
 "la suma es xxx y es menor a 50".*/
 function mostrar()
-{
+{	/*
 	var num1;
 	var num2; 
 	var divi;
@@ -34,8 +34,28 @@ function mostrar()
 			}
 		}
 	}
+*/	
+	var num1;
+	var num2; 
 
-	
+	num1 = prompt("Ingrese num1: ");
+	num2 = prompt("Ingrese num2: ");
+
+	if (num1 == num2) {
+		alert(num1+num2);
+	} else {
+		num1 = parseInt(num1);
+		num2 = parseInt(num2);
+		if(num1>num2){
+			alert(num1/num2);
+		} else {
+			if (num1+num2 < 50) {
+				alert("La suma es " + (num1+num2) + " y es menor a 50.")
+			} else {
+				alert(num1+num2);
+			}
+		}
+	}
 
 
 

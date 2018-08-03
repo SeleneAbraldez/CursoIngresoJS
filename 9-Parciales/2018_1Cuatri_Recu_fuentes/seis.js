@@ -6,7 +6,7 @@ Si es aprobó y la nota es mayor a 8 se debe agregar el mensaje: "muy bien".
 Si es nota para “raspando” y la nota es menor a 5 se debe agregar el mensaje: "debes preocuparte más". 
 Aclaración: hacer un switch y dentro toda la lógica incluyendo los if y con una sola ventana alert.*/
 function mostrar()
-{
+{	/*
 	var nota;
 	nota = document.getElementById('laHora').value;
 	nota = parseInt(nota);
@@ -40,4 +40,39 @@ function mostrar()
 		default:
 			alert("Nota no valida.");
 	}
+	*/
+	var nota;
+	nota = document.getElementById('laHora').value;
+	nota = parseInt(nota);
+
+	switch(nota){
+		case 0:
+		case 1:
+		case 2:
+		case 3:
+			alert("La proxima se puede");
+			break;
+		case 4:
+		case 5:
+		case 6:
+			if (nota<5) {
+				alert("Raspando, deberias preocuparte mas...")
+			}else{
+				alert("Raspando...");
+			}
+			break;
+		case 7:
+		case 8:
+		case 9:
+		case 10:
+			if (nota>8) {
+				alert("Muy bien! Aprobaste.");
+			} else {
+				alert("Aprobaste.")
+			}
+			break;
+		default:
+			alert("Nota no valida.");
+	}
+
 }
