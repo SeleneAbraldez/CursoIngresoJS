@@ -35,10 +35,12 @@ function mostrar()
 		letra = prompt("Ingresar una letra:");
 
 		numero = prompt("Ingresar un numero entre -100 y 100:"); 
-		while (numero<-100 || numero>100){
-			numero = prompt ("Numero no valido, ingresar numero entre -100 y 100:");
-		}
 		numero = parseInt(numero);
+		while (isNaN(numero) || numero<-100 || numero>100){
+			numero = prompt ("Numero no valido, ingresar numero entre -100 y 100:");
+			numero = parseInt(numero);
+		}
+		
 
 		if(numero>0){ //a
 			pares ++;
